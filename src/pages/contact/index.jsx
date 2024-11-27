@@ -11,13 +11,11 @@ const personalDetails =[
     value: "Deborah Ujunwam"
   },
   {
-    // label: "Email",
     value: "deborahoby693@gmail.com",
     icon: <FaEnvelope />,
     link: "mailto:deborahoby693@gmail.com"
   },
   {
-    // label: "Linkedin",
     value: "https://www.linkedin.com/in/deborah-ujunwam-12ab61215/",
     icon: <FaLinkedin />,
      link: "https://www.linkedin.com/in/deborah-ujunwam-12ab61215/"
@@ -30,7 +28,6 @@ const personalDetails =[
    },
    {
 
-    // label: "phone Number",
     value: "08100364292",
     icon: <FaPhone />,
     link: "tel:+08100364292" 
@@ -54,7 +51,7 @@ const Contact = () => {
      {
        personalDetails.map((item,index) =>(
          <li key={index}>
-         <a href={item.link} target="_blank" rel="noopener noreferre">
+         <a href={item.link} target="_blank" rel="noreferrer">
              <span className='icon'> {item.icon} </span>
              <span className='label'> {item.label} </span> 
              <span className='value'> {item.value} </span>

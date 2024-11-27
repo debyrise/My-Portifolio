@@ -18,7 +18,7 @@ const Footer = () => {
                <a
                  href="https://www.linkedin.com/in/deborah-ujunwam-12ab61215/"
                  target="_blank"
-                 rel="noopener noreferrer"
+                 rel="noreferrer"
                  aria-label="LinkedIn"
                >
                  <FaLinkedin size={25} />
@@ -26,7 +26,7 @@ const Footer = () => {
                <a
                  href="https://github.com/debyrise?tab=repositories"
                  target="_blank"
-                 rel="noopener noreferrer"
+                 rel="noreferrer"
                  aria-label="GitHub"
                >
                  <FaGithub size={25} />
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
 
       </div>
-      
+
       <div className='copy'>
       <h5> Copyright © 2024 Deborah Ujunwam. All Rights Reserved </h5>
       </div>
