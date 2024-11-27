@@ -59,16 +59,17 @@ button:hover {
     min-width: 30%;
     min-height: 30%;
     display: flex;
-    border-radius: 50%;
+    // border-radius: 50%;
     height: 70vh;
-    margin-top: 5rem;
-    border: 5px dashed var(--main-color);
+    // margin-top: 5rem;
+    // border: 5px dashed var(--main-color);
     justify-content: center;
     align-items: center;
     object-fit: cover;
+    // background-color: var(--sub-text-color);
     animation: imageAppear 3s ease-out;
     margin-right: 20px;
-    // padding-top: 10px;
+    padding-top: 2rem;
 
   }
   
@@ -78,7 +79,7 @@ button:hover {
     object-fit: cover;
     height: 100%;
     border-radius: 100%;
-    margin-top: 10px;
+    // margin-top: 10px;
     animation: imageScale 2s ease-out;
 
   }
@@ -98,16 +99,16 @@ button:hover {
         line-height: 5rem;
     }
 
-    .deby {
-        width: 50%;  // Adjust the container size for smaller screens
-        height: 60vh;  // Make the container smaller on mobile
-        margin-bottom: 20px;
-    }
+    // .deby {
+    //     width: 50%;  // Adjust the container size for smaller screens
+    //     height: 60vh;  // Make the container smaller on mobile
+    //     margin-bottom: 20px;
+    // }
 
-    img {
-        width: 80%;   // Ensure the image fits the smaller container
-        height: auto; // Keep the aspect ratio intact
-    }
+    // img {
+    //     width: 80%;   // Ensure the image fits the smaller container
+    //     height: auto; // Keep the aspect ratio intact
+    // }
     .contact__holds {
         margin-top: 20px;
     }
@@ -139,10 +140,10 @@ button:hover {
         height: 80%;
     }
 
-    img {
-        width: 70%;  // Ensure the image fits the container
-        height: auto; // Keep the aspect ratio intact
-    }
+    // img {
+    //     width: 70%;  // Ensure the image fits the container
+    //     height: auto; // Keep the aspect ratio intact
+    // }
     .contact__holds {
         margin-top: 20px;
     }
@@ -167,15 +168,15 @@ button:hover {
         font-size: 5rem;
         line-height: 8rem;
     }
-    .deby {
-        width: 50%;  // Adjust container size for smaller desktops
-        height: 80vh; // Adjust the height for smaller desktops
-    }
+    // .deby {
+    //     width: 50%;  // Adjust container size for smaller desktops
+    //     height: 80vh; // Adjust the height for smaller desktops
+    // }
 
-    .debyrise{
-        width: 80%;
-        height: 80%;
-    }
+    // .debyrise{
+    //     width: 80%;
+    //     height: 80%;
+    // }
     .contact__holds {
         margin-top: 20px;
     }
