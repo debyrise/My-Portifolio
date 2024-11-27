@@ -1,0 +1,98 @@
+.navabr {
+  background-color: var(--nav-background-color);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.nav__Container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  padding: 0px 20px;
+  flex: 1;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--main-color);
+}
+
+.navBar_menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  // margin-top: 1.7rem;
+}
+
+.navBar_menu_item {
+  line-height: 20px;
+  margin-right: 1.5rem;
+  font-size: 1.6rem;
+  position: relative; /* Needed for the pseudo-element to position correctly */
+}
+
+.navBar_menu_item_links {
+  color: var(--main-color);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.navBar_menu_item::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0;
+  background: transparent;
+  position: absolute;
+  bottom: 0; /* Positions the underline at the bottom of the item */
+  left: 0;
+  transition: all 0.5s ease;
+}
+
+.navBar_menu_item:hover::after {
+  width: 100%;
+  background: var(--main-color);
+}
+
+.nav_icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navBar_menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .navBar_menu.active {
+    background-color: white;
+    left: 0px;
+    opacity: 1;
+  }
+
+  .nav_icon {
+    display: block;
+    cursor: pointer;
+    color: var(--main-color); /* Correct CSS variable syntax */
+    padding-right: 20px;
+  }
+
+  .navBar_menu_item {
+    border-bottom: 1px solid var(--main-color);
+    margin: 0px;
+    padding: 20px 0px;
+  }
+}

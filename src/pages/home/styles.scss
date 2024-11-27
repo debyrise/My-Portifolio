@@ -1,0 +1,217 @@
+.home{
+    // height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // flex-direction: column;
+}
+
+.home__text_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 80vh;
+    // text-align: center;
+    // margin-bottom: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+}
+  
+.contact__holds{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    align-items: center;
+}
+button{
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding:8px 20px ;
+    background-color: transparent;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+    
+
+}
+
+button:hover {
+    background:var(--main-color);
+    color:var(----button-hover-color) ;
+    transform: scale(1.1);
+}
+
+
+.H1{
+    color:var(--main-color);
+    margin: 0px;
+    font-weight: 500;
+    font-size: 7rem;
+    line-height: 10rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typingEffect 2.5s steps(30,end);
+}
+.deby {
+    min-width: 30%;
+    min-height: 30%;
+    display: flex;
+    border-radius: 50%;
+    height: 70vh;
+    margin-top: 5rem;
+    border: 5px dashed var(--main-color);
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    animation: imageAppear 3s ease-out;
+    margin-right: 20px;
+    // padding-top: 10px;
+
+  }
+  
+
+  img {
+    width: 85%;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 100%;
+    margin-top: 10px;
+    animation: imageScale 2s ease-out;
+
+  }
+
+@media screen and (max-width : 550px) {
+    .home{
+        flex-direction: column;
+          justify-content: center;
+        align-items: center;
+    }
+
+    .home__text_wrapper{
+        margin-bottom: 20px;
+    }
+    .H1{
+        font-size: 2rem;
+        line-height: 5rem;
+    }
+
+    .deby {
+        width: 50%;  // Adjust the container size for smaller screens
+        height: 60vh;  // Make the container smaller on mobile
+        margin-bottom: 20px;
+    }
+
+    img {
+        width: 80%;   // Ensure the image fits the smaller container
+        height: auto; // Keep the aspect ratio intact
+    }
+    .contact__holds {
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 1.5rem;
+        padding: 8px 20px;
+    }
+    
+}
+
+@media screen and (min-width : 551px) and (max-width : 768px){
+    .home{
+        flex-direction: column;
+          justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .home__text_wrapper{
+        margin-bottom: 20px;
+    }
+    .H1{
+        font-size: 3rem;
+        line-height: 6rem;
+    }
+
+    .debyrise{
+        width: 80%;
+        height: 80%;
+    }
+
+    img {
+        width: 70%;  // Ensure the image fits the container
+        height: auto; // Keep the aspect ratio intact
+    }
+    .contact__holds {
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 1.8rem;
+        padding: 10px 25px;
+    }
+    
+}
+
+@media screen and (min-width : 769px) and (max-width : 990px){
+    .home{
+        flex-direction: column;
+          justify-content: center;
+        align-items: center;
+    }
+    .home__text_wrapper{
+        margin-bottom: 20px;
+    }
+    .H1{
+        font-size: 5rem;
+        line-height: 8rem;
+    }
+    .deby {
+        width: 50%;  // Adjust container size for smaller desktops
+        height: 80vh; // Adjust the height for smaller desktops
+    }
+
+    .debyrise{
+        width: 80%;
+        height: 80%;
+    }
+    .contact__holds {
+        margin-top: 20px;
+    }
+
+    button {
+        font-size: 2rem;
+        padding: 12px 30px;
+    }
+  
+}
+
+@keyframes typingEffect {
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+    
+}
+@keyframes imageAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes imageScale {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}

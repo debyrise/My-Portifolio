@@ -1,0 +1,109 @@
+.contact__hold {
+    /* Default styles for larger screens */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  ul > li {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  span.icon {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  
+  span.value {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    color: var(--main-color);
+    border: none;
+  }
+  
+  span.label {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: inline-block;
+    margin-right: 16px;
+    padding-bottom: 5px;
+    color: var(--main-color);
+  }
+  
+  a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the parent */
+    transition: all 0.3s ease-in-out;
+  }
+  
+  a:hover .icon,
+  a:hover .value {
+    text-decoration: underline; /* Optional: underline on hover */
+  }
+  
+  a:hover .icon,
+  a:hover .value {
+    text-decoration: underline; /* Optional: underline on hover */
+    color: var(--main-color); /* Change color on hover (optional) */
+  }
+  
+  a:hover .icon {
+    transform: scale(1.1); /* Slightly scale the icon on hover */
+  }
+  
+  a:hover .value {
+    color: var(--main-color); /* Change value color on hover */
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* Adjust contact hold for smaller screens */
+    .contact__hold {
+      margin: 20px;
+      padding: 10px; /* Add padding around the content */
+    }
+  
+    ul {
+      padding: 0 15px; /* Add horizontal padding to prevent items touching the edges */
+    }
+  
+    ul > li {
+      margin-top: 10px; /* Reduce space between items */
+      flex-direction: column; /* Stack items vertically for smaller screens */
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    span.icon {
+      font-size: 20px; /* Increase icon size for better readability */
+    }
+  
+    span.value, span.label {
+      font-size: 16px; /* Reduce font size for better fit on small screens */
+    }
+  
+    /* Optional: Add a smaller size for the heading text */
+    .personal_info {
+      font-size: 1.7rem; /* Adjust header size */
+    }
+  }
+  

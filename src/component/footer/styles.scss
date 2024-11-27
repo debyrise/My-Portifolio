@@ -1,0 +1,126 @@
+.footer {
+    background-color: var( --background-color);
+    color: var(--main-color);
+    padding: 20px;
+    // padding: 10px;
+
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    padding-top: 6rem;
+    
+  }
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 10px;
+    padding-top: 2rem;
+    gap: 20px;
+    // background-color: yellow;
+  }
+ 
+  
+  .footer-icons a:hover {
+    color: (#007bff); 
+  }
+  
+  
+
+.copy{
+    font-size: 1.8rem;
+    color: var(--main-color);
+    text-align: center;
+    // margin-top: 20px;
+    padding-top: 8rem;
+}
+  
+
+  
+  .footer-info p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .footer-info a {
+    color: var(--main-color);
+    text-decoration: none;
+  }
+  
+  .footer-info a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-nav ul li {
+    margin-bottom: 10px;
+
+  }
+  
+  .footer-nav ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .footer-nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .footer-container {
+      flex-direction: column; /* Stack footer sections vertically */
+      align-items: center; /* Center the content */
+    }
+  
+    .footer-info {
+      max-width: 100%; /* Make footer info take up the full width */
+      text-align: center; /* Center the text */
+    }
+  
+    .footer-icons {
+      justify-content: center; /* Center the icons */
+    }
+  
+    .footer-nav ul {
+      display: flex;
+      justify-content: center; /* Center the navigation items */
+    //   gap: 10px;
+      margin-top: 10px;
+    }
+  
+    .footer-nav ul li {
+      margin-bottom: 0; /* Remove bottom margin for mobile */
+    }
+  
+    .footer-nav ul li a {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
+  /* Media Query for very small screens */
+  @media (max-width: 480px) {
+    .footer-info h3 {
+      font-size: 20px; /* Smaller font size for heading on mobile */
+    }
+  
+    .footer-icons a {
+      font-size: 25px; /* Smaller icons on very small screens */
+    }
+    .footer-nav ul{
+        gap: 10px;
+    }
+  }
+  

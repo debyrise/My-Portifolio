@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+:root {
+  --background-color: #F4F4F4;         /* Light Gray background */
+  --main-color: #555555;              /* Dark Gray for text */
+  --sub-text-color: #333333;          /* Lighter Gray for secondary text */
+  --nav-background-color: #FFFFFF;    /* White background for the navigation bar */
+   --accent-color: #3498DB;           /* Blue for buttons, links, and highlights */
+  --button-hover-color: #2980B9;      /* Darker blue for button hover effect */
+}
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+html{
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body{
+  background-color: var(--background-color);
+  height: 100%;
+}
+#root{
+  height: 100%;
+}
