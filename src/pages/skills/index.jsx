@@ -66,7 +66,11 @@ const skillsdatas = [
     icon: <SiMongodb />,
     label: 'MONGODB'
   },
-  
+ 
+  {
+    icon: <SiDotnet />,
+    label: '.NET CORE'
+  },
 ];
 
 
